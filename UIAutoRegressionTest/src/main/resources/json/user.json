@@ -1,0 +1,29 @@
+[
+	{
+        "usrId": "82022096",
+        "sysSeq": 2,
+        "usrPw": "Song1231@@",
+        "usrNm": "송정근",
+        "regDttm": "20181202",
+        "usrYn": "Y",
+        "lastModiId": "82022096"
+    },
+  	{
+        "usrId": "82022097",
+        "sysSeq": 2,
+        "usrPw": "Song1231@@",
+        "usrNm": "김광열",
+        "regDttm": "20181202",
+        "usrYn": "Y",
+        "lastModiId": "82022096"
+    },
+    {
+        "usrId": "82022098",
+        "sysSeq": 2,
+        "usrPw": "Song1231@@",
+        "usrNm": "이수연",
+        "regDttm": "20181202",
+        "usrYn": "Y",
+        "lastModiId": "82022096"
+    }
+]

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="utf-8">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Hello</title>
+</head>
+<body>
+<script>
+function getUsers() {
+	var xhttp = new XMLHttpRequest();
+	//alert("여기1");
+	xhttp.open("GET", "http://localhost:8001/users");
+	xhttp.send();
+	
+	xhttp.onreadystatechange = function() {
+		if (xhttp.readyState == 4 && xhttp.status ==200) {
+			//alert(xhttp.readyState);
+			 
+			var response = JSON.parse(xhttp.responseText);
+			//document.getElementByID("print").innerHTML = reponse.ip;
+			alert(xhttp.responseText);
+		}
+	};
+	
+
+};
+
+</script>
+	<table>
+		<tr>
+			<td colspan="2"> <b>KOS ProObject Reqression Test</b> </td>
+		</tr>
+		<tr>
+			<td><a href="/user">사용자데이터 입력(건별)</a></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><a href="/user">사용자데이터 입력(일괄)</a></td>
+		</tr>
+		<tr>
+			<td><a href="/users">사용자조회</a></td>
+			<td>
+				<input type="button" name="cmdViewUser" onclick="getUsers()" value="사용자조회"/>
+			</td>
+		</tr>
+		<tr>
+			<td><a href="/perform">KOS 테스트 수행</a></td>
+		</tr>
+	</table>
+
+</body>
+</html>
